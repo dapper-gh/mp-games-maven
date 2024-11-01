@@ -1,5 +1,7 @@
 package edu.grinnell.csc207.lightsout;
 
+import java.util.Random;
+
 /**
  * This represents the operations on the board useful to the player.
  * 
@@ -39,7 +41,7 @@ public class PlayerBoard extends Board {
         continue;
       } // if
 
-      this.toggleArea(coords[0], coords[1]);
+      this.toggleAt(coords[0], coords[1]);
     } // for
   } // toggleArea(int, int)
 
@@ -59,4 +61,18 @@ public class PlayerBoard extends Board {
 
     return true;
   } // isSolved()
+
+  /**
+   * Shuffles the board according to the randomness from rng.
+   * @param rng The random number generator to use.
+   */
+  public void shuffle(Random rng) {
+    int numMoves = rng.nextInt(0, 10000);
+    for (int i = 0; i < numMoves; i++) {
+      int row = rng.nextInt(0, this.getHeight());
+      int col = rng.nextInt(0, this.getWidth());
+
+      this.toggleArea(row, col);
+    } // for
+  } // shuffle()
 } // class PlayerBoard
