@@ -1,10 +1,11 @@
 package edu.grinnell.csc207.lightsout;
 
-import edu.grinnell.csc207.util.*;
+import edu.grinnell.csc207.util.MatrixV0;
+import edu.grinnell.csc207.util.Matrix;
 
 /**
  * This class implements the basic operations of a board in Lights Out.
- * 
+ *
  * @author David William Stroud
  * @author Luis Lopez
  */
@@ -34,10 +35,10 @@ public class Board {
   } // getAt(int, int)
 
   /**
-   * This functions sets whether the light at row, col is on to value. 
+   * This functions sets whether the light at row, col is on to value.
    * @param row The row of the light.
-   * @param col 
-   * @param value
+   * @param col The column of the light.
+   * @param value The value to which to set the light.
    */
   public void setAt(int row, int col, LightStatus value) {
     matrix.set(row, col, value);

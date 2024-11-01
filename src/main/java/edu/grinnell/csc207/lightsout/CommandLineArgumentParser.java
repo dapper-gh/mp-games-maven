@@ -2,7 +2,7 @@ package edu.grinnell.csc207.lightsout;
 
 /**
  * This class provides utility functions for parsing command line arguments.
- * 
+ *
  * @author David William Stroud
  * @author Luis Lopez
  */
@@ -64,7 +64,7 @@ public class CommandLineArgumentParser {
    * @return The width given by the command-line.
    */
   public int getWidth() {
-    return this.width;    
+    return this.width;
   } // getWidth()
 
   /**

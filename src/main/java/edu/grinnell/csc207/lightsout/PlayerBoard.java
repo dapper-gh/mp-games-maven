@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * This represents the operations on the board useful to the player.
- * 
+ *
  * @author David William Stroud
  * @author Luis Lopez
  */
@@ -29,8 +29,8 @@ public class PlayerBoard extends Board {
       new int[] {row + 1, col},
       new int[] {row - 1, col},
       new int[] {row, col + 1},
-      new int[] {row, col - 1}
-    };
+      new int[] {row, col - 1} // int[]
+    }; // int[][] candidates
 
     for (int[] coords : candidates) {
       if (coords[1] >= this.getWidth() || coords[1] < 0) {
@@ -55,7 +55,7 @@ public class PlayerBoard extends Board {
       for (int j = 0; j < this.getHeight(); j++) {
         if (this.getAt(j, i) == LightStatus.ON) {
           return false;
-        }
+        } // if
       } // for
     } // for
 

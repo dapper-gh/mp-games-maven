@@ -2,7 +2,7 @@ package edu.grinnell.csc207.lightsout;
 
 /**
  * This enum represents the two states in which a light can be.
- * 
+ *
  * @author David William Stroud
  * @author Luis Lopez
  */

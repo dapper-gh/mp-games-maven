@@ -10,7 +10,7 @@ import edu.grinnell.csc207.util.IOUtils;
 
 /**
  * This class represents the main user interface of the game.
- * 
+ *
  * @author David William Stroud
  * @author Luis Lopez
  */
@@ -23,9 +23,9 @@ public class UserInterface {
     PrintWriter pen = new PrintWriter(System.out, true);
 
     CommandLineArgumentParser clap = new CommandLineArgumentParser(
-      5,
-      5,
-      new Random().nextInt()
+        5,
+        5,
+        new Random().nextInt()
     );
 
     try {
@@ -39,10 +39,10 @@ public class UserInterface {
     board.shuffle(new Random(clap.getSeed()));
 
     pen.printf(
-      "Board width: %d\nBoard height: %d\nSeed: %d\n\n",
-      board.getWidth(),
-      board.getHeight(),
-      clap.getSeed()
+        "Board width: %d\nBoard height: %d\nSeed: %d\n\n",
+        board.getWidth(),
+        board.getHeight(),
+        clap.getSeed()
     );
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -87,8 +87,8 @@ public class UserInterface {
     } // while
 
     pen.printf(
-      "Congratulations!\nYou won!\nThe number of moves you used is: %d.\n",
-      numMoves
+        "Congratulations!\nYou won!\nThe number of moves you used is: %d.\n",
+        numMoves
     );
   } // main(String[])
 

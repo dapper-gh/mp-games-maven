@@ -2,7 +2,7 @@ package edu.grinnell.csc207.lightsout;
 
 /**
  * This class represents an invalid command-line argument.
- * 
+ *
  * @author David William Stroud
  * @author Luis Lopez
  */
