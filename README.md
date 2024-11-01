@@ -10,9 +10,15 @@ Authors:
 
 Instructions:
 
-* **Please add instructions for running the game**
+This game implements the classic "Lights Out" puzzle.
 
-Acknowledgements:
+Run this game with `mvn exec:java -q`.
+There are three command-line arguments you can add:
+* `-w <number>`: the width of the game board. Default: 5.
+* `-h <number>`: the height of the game board. Default: 5.
+* `-s <number>`: a number used to define the shuffled version of the board. Default: random.
+
+Acknowledgements: N/A
 
 Source:
 
