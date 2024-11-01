@@ -13,7 +13,7 @@ Instructions:
 This game implements the classic "Lights Out" puzzle.
 
 Run this game with `mvn exec:java -q`.
-There are three command-line arguments you can add:
+There are three command-line arguments you can add using `-Dexec.args="<command line arguments here>"`:
 * `-w <number>`: the width of the game board. Default: 5.
 * `-h <number>`: the height of the game board. Default: 5.
 * `-s <number>`: a number used to define the shuffled version of the board. Default: random.
